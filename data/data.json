@@ -1,0 +1,17 @@
+{
+    "Careers": [
+        { "title": "Software Engineer", "description": "Build scalable APIs using Python and FastAPI." },
+        { "title": "Data Scientist", "description": "Analyze data and create ML models for predictions." },
+        { "title": "DevOps Engineer", "description": "Manage CI/CD pipelines and cloud infrastructure." }
+    ],
+    "ServicesOffereds": [
+        { "service_name": "Web Development", "details": "Frontend and backend web app development." },
+        { "service_name": "Data Analytics", "details": "Transform raw data into meaningful insights." },
+        { "service_name": "AI Solutions", "details": "Custom AI/ML solutions for businesses." }
+    ],
+    "DirectorsInfo": [
+        { "name": "Alice Johnson", "position": "Managing Director", "bio": "Over 20 years of leadership in tech." },
+        { "name": "Bob Smith", "position": "Technical Director", "bio": "Expert in cloud computing and security." },
+        { "name": "Clara Lee", "position": "Finance Director", "bio": "Experienced in corporate finance and strategy." }
+    ]
+}
