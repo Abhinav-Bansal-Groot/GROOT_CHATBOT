@@ -1,5 +1,5 @@
 # app/services/chat_service.py
-from app.services.meta_handler import check_meta_question
+from app.ai.meta_handler import check_meta_question
 from app.core.config import settings
 from langchain_core.documents import Document   # <- fix: ensure Document is defined for annotations
 

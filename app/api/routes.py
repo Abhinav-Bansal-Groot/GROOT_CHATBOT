@@ -10,8 +10,8 @@ from app.services.retrieval_service import RetrievalService
 from app.services.chat_service import ChatService
 
 from app.services.qdrant_service import QdrantService
-from app.services.llm import LLMService
-from app.services.embeddings import EmbeddingService
+from app.ai.llm import LLM
+from app.ai.embeddings import Embeddings
 
 from .schemas import ChatRequest, ChatResponse, SQLToMongoRequest
 import json
@@ -23,8 +23,8 @@ router = APIRouter(prefix="/api")
 def get_services():
     mongo = MongoRepository()
     qdrant = QdrantService()
-    embedder = EmbeddingService()
-    llm = LLMService()
+    embedder = Embeddings()
+    llm = LLM()
     ingest = IngestionService(mongo, qdrant, embedder)
     retr = RetrievalService(qdrant, embedder)
     chat_service = ChatService(retr, llm)

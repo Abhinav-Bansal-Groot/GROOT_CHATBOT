@@ -16,5 +16,12 @@ class Settings:
     BOT_ROLE: str = "AI assistant"  # role/identity
 
     GPT_MODEL = os.getenv("GPT_MODEL")
+    META_QUESTIONS = [
+        "what is your name",
+        "who are you",
+        "whom am i talking with",
+        "who created you",
+        "tell me about yourself"
+    ]
 
 settings = Settings()
