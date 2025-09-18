@@ -2,7 +2,7 @@ from langchain_openai import ChatOpenAI
 from app.core import config
 
 
-class LLMService:
+class LLM:
     def __init__(self, temperature: float = 0.0):
         self.llm = ChatOpenAI(model=config.settings.GPT_MODEL, temperature=temperature, api_key=config.settings.OPENAI_API_KEY)
 
